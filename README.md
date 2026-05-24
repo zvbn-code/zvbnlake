@@ -8,6 +8,8 @@ Aufbau eines ZVBN Datelakes
   - Realtimearchiv Hacon
 - AFZS
   - Rohdaten drpca
+    - Zähldaten
+    - GPS Tracks   
   - zugeordnete Daten aus mabinso, Cosmo
 - Infrastruktur HIS
 - VMS
@@ -15,7 +17,6 @@ Aufbau eines ZVBN Datelakes
 
 ## Umsetzung
 - Aufbauend auf DuckDB und Parquet
-
 
 ```mermaid
   graph TD;
@@ -25,3 +26,7 @@ Aufbau eines ZVBN Datelakes
       VMS-->LAKE;
       HIS-->LAKE;
 ```
+
+|Art|Format|Dateformat|Ablagae|
+|--|---|---|---|
+|GTFS|Sollfahrten pro Tag|Parquet|/home/zvbn/pyth|
